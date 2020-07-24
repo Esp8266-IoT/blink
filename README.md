@@ -1,18 +1,21 @@
-# blink
-blink blue led of ESP8266
+# blink example
 
-* install ESP8266_RTOS_SDK and tools (guide at: https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/)
-* then
+blink blue led example for ESP8266
 
-  - git clone git@github.com:Esp8266-IoT/blink.git
-  - make clean
-  - make all
+install ESP8266_RTOS_SDK and tools (guide at: https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/)
+
+then:
+
+    git clone git@github.com:Esp8266-IoT/blink.git
+    make clean
+    make all
   
-* connect your board and
-  - make flash
-  - make monitor
+connect your board and
 
-* this is an example of build
+    make flash
+    make monitor
+
+this is an example of build
 
     make all
     
@@ -29,7 +32,7 @@ blink blue led of ESP8266
     To flash all build output, run 'make flash' or:
     python /hd/esp/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266 --port /dev/ttyUSB0 --baud 115200 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0 /hd/eclipse-cpp-2018-12/eclipse/workspace/blink/build/bootloader/bootloader.bin 0x10000 /hd/eclipse-cpp-2018-12/eclipse/workspace/blink/build/blink.bin 0x8000 /hd/eclipse-cpp-2018-12/eclipse/workspace/blink/build/partitions_singleapp.bin
 
-* this is an example of monitor
+this is an example of monitor
 
     make monitor
 
