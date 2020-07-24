@@ -1,6 +1,6 @@
 # blink example
 
-blink blue led example for ESP8266
+blink blue led example for ESP8266 (like this example: https://www.youtube.com/watch?v=cf6QGyYoVPY&t=67s by Prof. Andrea Pollini, but with eclipse and esp8266)
 
 install ESP8266_RTOS_SDK and tools (guide at: https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/)
 
